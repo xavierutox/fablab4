@@ -579,7 +579,7 @@ Omitir un parametro omite el filtro.
 <span class="n">endpoint</span><span class="o">=</span> <span class="s">'Add'</span>
 <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'http://3.138.175.135:4000/Maquina/</span><span class="si">{</span><span class="n">endpoint</span><span class="si">}</span><span class="s">'</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
-    <span class="s">'tipo_maquina'</span><span class="p">:</span> <span class="s">'2'</span><span class="p">,</span>
+    <span class="s">'tipo_maquina'</span><span class="p">:</span> <span class="s">'1'</span><span class="p">,</span>
     <span class="s">'nombre'</span><span class="p">:</span> <span class="s">'maquina-chan'</span><span class="p">,</span>
     <span class="s">'ubicacion'</span><span class="p">:</span> <span class="s">'algun_lugar'</span><span class="p">,</span>
 <span class="p">})</span>
@@ -630,7 +630,7 @@ Omitir un parametro omite el filtro.
 <div class="highlight"><pre class="highlight python tab-python"><code>
 <span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">endpoint</span><span class="o">=</span> <span class="s">'Add'</span>
+<span class="n">endpoint</span><span class="o">=</span> <span class="s">'Delete'</span>
 <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">'http://3.138.175.135:4000/Maquina/</span><span class="si">{</span><span class="n">endpoint</span><span class="si">}</span><span class="s">/:id'</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
